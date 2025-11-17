@@ -1,16 +1,95 @@
-# React + Vite
+# 🧾 Expense Analyzer — Smart CSV-Based Financial Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, privacy-friendly **bank statement analyzer** built using **React + Vite + TailwindCSS**.  
+Upload CSV bank statements and instantly visualize expenses, income patterns, categories, and trends.  
+Works for all major Indian banks (SBI, HDFC, ICICI, Axis, Kotak, Federal Bank, etc.)
 
-Currently, two official plugins are available:
+🔗 **Live Demo:**  
+https://mankal-27.github.io/expense-analyzer/#/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📤 **Upload CSV bank statements**
+- 🔍 **Rule-based categorization** (Food, Travel, Shopping, Bills, Groceries, Fuel, Income, etc.)
+- 🤖 **Optional AI categorization using Groq** (enabled in development only)
+- 📊 **Visual Dashboards**
+  - Category Pie Chart
+  - Monthly Spending Bar Chart
+  - Daily Spending Trend Line
+- 💵 **Smart Summary Cards**
+- 📑 **Clean Transactions Table**
+- 🧾 **One-click PDF Export**
+- 🔒 **0% data storage** — Everything stays in your browser
+- ⚡ **Blazing-fast Vite build**
+- 🎨 Minimal Apple-style UI using TailwindCSS
+- 🚀 **Automatic Deployment to GitHub Pages** via GitHub Actions
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+| Area | Technology |
+|------|------------|
+| Frontend | React (Vite) |
+| Styling | Tailwind CSS |
+| Charts | Recharts |
+| CSV Parsing | PapaParse |
+| PDF Export | html2canvas-pro + jsPDF |
+| AI (optional) | Groq API |
+| Deployment | GitHub Pages + GitHub Actions |
+| Routing | React Router (HashRouter) |
+
+---
+
+## 📂 Project Structure
+
+
+
+
+---
+
+## ⚙️ Installation
+
+Clone the repo:
+
+```bash
+git clone https://github.com/mankal-27/expense-analyzer.git
+cd expense-analyzer
+npm install
+
+```
+Run development server:
+```
+npm run dev
+```
+
+Build production bundle:
+```
+npm run build
+```
+
+🔐 Environment Variables
+
+Create a .env file:
+```
+VITE_GROQ_API_KEY=your_api_key_here
+```
+⚠️ AI categorization is disabled in production to avoid exposing keys.
+
+🧾 PDF Export
+
+Click Download PDF Report on the dashboard to generate a full A4 PDF including:
+
+Summary Cards
+
+Category Chart
+
+Monthly Trends
+
+Daily Trends
+
+Complete Transactions Table
+
+Saved as: expense-report.pdf
