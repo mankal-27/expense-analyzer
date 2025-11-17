@@ -44,8 +44,33 @@ https://mankal-27.github.io/expense-analyzer/#/
 ---
 
 ## 📂 Project Structure
-
-
+```
+src/
+ ├── pages/
+ │    ├── UploadPage.jsx
+ │    ├── DashboardPage.jsx
+ │    └── ReportPage.jsx
+ │
+ ├── components/
+ │    ├── FileUpload.jsx
+ │    ├── SummaryCards.jsx
+ │    ├── CategoryChart.jsx
+ │    ├── MonthlyChart.jsx
+ │    ├── DailyChart.jsx
+ │    ├── TransactionsTable.jsx
+ │    ├── ExportPDFButton.jsx
+ │
+ ├── context/
+ │    └── ExpenseContext.jsx
+ │
+ ├── utils/
+ │    ├── parseCSV.js
+ │    ├── categorize.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
 
 
 ---
